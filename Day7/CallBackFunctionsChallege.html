@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBackFunctionsChallege</title>
+</head>
+<style>
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 153, 0);
+        transition: all 0.5s;
+    }
+    #startBtn{
+        width: 15%;
+        height: 8%;
+        font-size: large;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0px 8px 8px rgba(42, 40, 40, 0.313);
+    }
+    
+
+</style>
+<body>
+
+    <button id="startBtn">Start</button>
+
+</body>
+<script>
+
+    function getRandomColor(){
+        const letters = "0123456789ABCDEF"
+        let color = "#"
+        for(let i=0;i<6;i++){
+            color += letters[Math.floor(Math.random()*16)];
+        }
+        return color
+    }
+
+    let setBgColor = function(){
+        document.getElementsByTagName("body")[0].style.backgroundColor=getRandomColor();
+    }
+    
+    let setBtnColor = function(){
+        document.getElementById("startBtn").style.backgroundColor=getRandomColor();
+    }
+
+    
+
+    document.getElementById("startBtn").onclick=function(){
+        setBtnColor() 
+        setInterval(setBgColor,2000)
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+let student = {
+        name:"Mohammed",
+        age: 22,
+        Address:"Taiz Jamal St.",
+        toString:function(){
+            return `${this.name} - ${this.age} - ${this.Address}`
+        }
+        
+    }
+
+   let {name,age} = student
+   console.log(name,age)
+
+   let namex = "Kali";
+   let agex = "55";
+   console.log(namex,agex);
+
+    [namex,agex] = [agex,namex];
+    console.log(namex,agex)
+
+   function printStdInfo({name,age}){
+        console.log(`${name} - ${age}`) 
+   }
+   
+   printStdInfo(student)
+
+   let arr = ["Mohammmed","Ali","Marwan"]
+   let [firstName,,lastName] = arr
+   console.log(firstName,lastName)
+   
+   console.log(...arr)
+   
+   let nArr = ["Mark",...arr,"Newton"]
+   console.log(...nArr)
+
+
+
+   
+
+    
+
+</script>
+</html>

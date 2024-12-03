@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" type="text">
+    <button id="btn">Button</button>
+    <!-- <button id="btn" onclick="take()">Button</button> -->
+    <h3 id="output"></h3>
+</body>
+<script>
+
+// first way
+    // document.getElementById("btn").addEventListener("click",function(){
+    //     let userMassage = document.getElementById("input").value
+    //     document.getElementById("output").innerHTML=userMassage
+    // })
+
+// second way
+    // document.getElementById("btn").onclick=function(){
+        // let userMassage = document.getElementById("input").value
+        // document.getElementById("output").innerHTML=userMassage
+    // }
+
+// third way
+    // document.getElementById("btn").onclick=take
+    function take(){
+        let userMassage = document.getElementById("input").value
+        document.getElementById("output").innerHTML=userMassage
+    }  
+</script>
+</html>

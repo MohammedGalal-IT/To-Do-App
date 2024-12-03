@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello World</h2>
+    <h3 id="h1"></h3>
+    <h3 id="h2"></h3>
+    <h3 id="h3"></h3>
+    <h3 id="h4"></h3>
+
+    <h3 id="all"></h3>
+    <h3 id="otherway"></h3>
+
+<body>
+<script>
+
+    var mystr = document.getElementsByTagName("h2")[0].innerText
+    var upper = mystr.toLocaleUpperCase();
+    var rpo = upper.replace(/o/g,"y")
+    var reverse = rpo.split("").reverse().join("")
+
+    document.getElementById("h1").innerText=mystr
+    document.getElementById("h2").innerText=upper
+    document.getElementById("h3").innerText=rpo
+    document.getElementById("h4").innerText=reverse
+
+    document.getElementById("all").innerHTML=`${mystr}------${upper}-----${rpo}-----${reverse}`
+    document.getElementById("otherway").innerHTML=mystr+"----"+upper+"-----"+rpo+"----"+reverse
+
+</script>
+</html>

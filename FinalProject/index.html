@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+</head>
+<body>
+    <div class="container">
+        <header >
+            <p>مهامي</p>
+            <i class="fa-solid fa-circle-plus"></i>
+            
+        </header>
+        <section>
+            <div class="task">
+                <div class="operations">
+                    <div class="check_icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="xmark_icon">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <div class="trash_icon">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <div class="pencil_icon">
+                        <i class="fa-solid fa-pencil"></i>
+                    </div>
+                </div>
+                <p>قراءة كتاب</p>
+                <div class="date">
+                    <p>2024 /12/ 12</p>
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+            </div>
+            
+
+        </section>
+
+    </div>
+
+    <div class="template" style="display: none;">
+        <div class="operations">
+            <div class="check_icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="xmark_icon">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="trash_icon">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+            <div class="pencil_icon">
+                <i class="fa-solid fa-pencil"></i>
+            </div>
+        </div>
+        <p>قراءة كتاب</p>
+        <div class="date">
+            <p>2024 /12/ 12</p>
+            <i class="fa-solid fa-calendar-days"></i>
+        </div>
+    </div>
+    
+</body> 
+<script>
+//      let h = function() {
+//         Swal.fire({
+//   title: "The Internet?",
+//   text: "That thing is still around?",
+//   icon: "question"
+// });
+//      }
+
+let tempelate = document.querySelector(".template").cloneNode(true);
+tempelate.className = "task"
+tempelate.style.display="flex"
+
+
+document.querySelector("section").appendChild(tempelate)
+
+    
+</script>
+</html>

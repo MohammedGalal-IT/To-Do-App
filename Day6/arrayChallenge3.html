@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Challenge</title>
+</head>
+<body>
+
+    <div style="height: 200px;"></div>
+
+    <div class="container" style="text-align: center;">
+        <input type="text" id="Submit" value="pp">
+        <button id="Sbtn">Submit</button>
+        <button id="Dbtn">Delete</button>
+        <h5 id="output"></h5>
+    </div>
+    
+    
+</body>
+<script>
+
+    const arr =[]
+    document.getElementById("Sbtn").addEventListener("click",function(){
+        console.log("jjfj")
+        let input = document.getElementById("Submit").value;
+        document.getElementById("Submit").value= ""
+        arr.push(input)
+
+        document.getElementById("output").innerHTML = arr.join(" ")
+    })
+
+    document.getElementById("Dbtn").addEventListener("click",function(){
+        
+        arr.pop()
+        document.getElementById("output").innerHTML = arr.join(" ") 
+    })
+
+
+</script>
+</html>

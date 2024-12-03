@@ -1,0 +1,139 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(27, 5, 61);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: "El Messiri", sans-serif;
+    transition: all 0.3;
+}
+
+p{
+     margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.container{
+    width: 70%;
+    position: relative;
+    top: 5em;
+}
+header{
+    background-color: rgb(85, 12, 134);
+    color: white;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 2px;
+    
+    
+}
+
+header i{
+    position: absolute;
+    justify-self: flex-end;
+    right:2%;
+    font-size: xx-large;
+
+}
+header p{
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 3px;
+
+}
+section{
+    background-color:rgb(241, 238, 238);
+    border-radius: 1px;
+    min-height:30%;
+    max-height: 75%;
+    padding: 10px 10px 1px 10px;
+    overflow: auto;
+}
+.task{
+    height: 4em;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.393) ;
+
+    display: flex;
+
+    position: relative;
+    
+}
+
+.date{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 7em;
+    position: absolute;
+    right: 8px;
+    top:45px;
+    color: rgba(0, 0, 0, 0.522);
+
+}
+
+.task > p{
+    
+    font-size: 26px;
+    font-family: "El Messiri", sans-serif;
+    font-weight: 600;
+    position: absolute;
+    right: 8px;
+    top:5px;
+    
+}
+
+.operations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.check_icon{
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.03em;
+}
+.xmark_icon{
+    color: rgb(220, 148, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.03em;
+    display: none;
+}
+.trash_icon,.pencil_icon{
+    background-color: darkred;
+    width: 2.4em;;
+    height: 2.4em;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 50px;
+}
+.pencil_icon{
+    background-color: rgb(0, 74, 139);
+}
+

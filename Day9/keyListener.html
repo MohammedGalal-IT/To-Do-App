@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Key Event Listener</title>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Type something and press Enter" />
+    <p id="output"></p>
+
+    <script>
+        // Get the input element
+        const input = document.getElementById("textInput");
+
+        // Add an event listener for the 'keydown' event
+        input.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                // Prevent the default action (optional)
+                event.preventDefault();
+
+                // Handle the Enter key press (e.g., display the input value)
+                document.getElementById("output").innerText = "You typed: " + input.value;
+                input.value = ""; // Clear the input field
+            }
+        });
+    </script>
+</body>
+</html>

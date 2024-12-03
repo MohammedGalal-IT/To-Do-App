@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope in javascript</title>
+    
+</head>
+<body>
+    
+</body>
+<script>
+
+    var xx = 0 //Golobel variable
+
+    if(true){
+        var x = 5
+    }
+
+    for(let i =0;i<5;i++){
+        var y = 6
+    }
+
+    function print(){
+        var z = 7
+        console.log(xx)
+    }
+
+    console.log(x)
+    console.log(y)
+    // console.log(z) Error
+    print()
+
+    const arr = ["Mohammed","Ali","Ahmed","Hadi"]
+    console.log(arr.push("Bashar")) 
+    console.log(arr.pop())
+    console.log()
+
+
+</script>
+</html>

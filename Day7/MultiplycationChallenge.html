@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiplycationChallenge</title>
+</head>
+<body>
+
+    <div id="output_field" style="text-align: center;">
+
+    </div>
+    
+</body>
+<script>
+
+    for(let i=1;i<=12;i++){
+        document.getElementById("output_field").innerHTML+=`<h1>Multiplycation Table of ${i}</h1> <br> <h4>`
+        for(let j=1;j<=12;j++){
+            document.getElementById("output_field").innerHTML +=`${i} x ${j} = ${i*j}<br>`
+        }
+        document.getElementById("output_field").innerHTML +=`</h4><hr>`
+    }
+    
+    
+</script>
+</html>

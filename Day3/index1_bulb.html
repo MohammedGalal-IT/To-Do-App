@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap column;
+        min-height: 50vh;
+    }
+
+    
+
+    .buttons{
+        display: flex;
+        gap: 100px;
+    }
+    .buttons button{
+        width: 100px;
+        padding: 5px 1px;
+        font-family: monospace;
+        font-size: x-large;
+        border-radius: 30px;
+        border:1px solid rgba(0, 0, 0, 0.495);
+    }
+
+</style>
+<body>
+    <div class="img">
+        <img src="Untitled2.png" alt="" id="img" width="500px" title="bulb action using javascript">
+    </div>
+    <div class="buttons">
+        <button onclick="changeOn()">ON</button>
+        <button onclick="changeOff()">OFF</button>
+    </div>
+</body>
+<script>
+
+    function changeOn(){
+        document.getElementById("img").src="Untitled3.png"
+    }
+    function changeOff(){
+        document.getElementById("img").src="Untitled2.png"
+    }
+</script>
+
+</html>

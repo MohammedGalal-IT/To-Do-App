@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var myName = "Mohammed Galal";
+    let sub = myName.substr(0, 8);
+    console.log(sub);
+
+    let subString = myName.substring(9, 14);
+    console.log(subString);
+
+    let upper = myName.toUpperCase();
+    console.log(upper);
+
+    let lower = myName.toLowerCase();
+    console.log(lower);
+
+    let rep = myName.replace("Mohammed", "Labeeb");
+    console.log(rep);
+
+    // to fix the problem with uppers and lowers we first change the string into upperCase or lowerCase
+    let rep2 = lower.replace("mohammed", "labeeb");
+    console.log(rep2);
+    
+    // capitalize the first letter each word
+    rep2 = rep2.split(" "); // converting the string to array 
+    for (let i = 0; i < rep2.length; i++) {
+      let old = rep2[i].charAt(0);
+      let newc = old.toUpperCase();
+      let rep3 = rep2[i].replace(old, newc);
+
+       rep2[i]=rep3;
+    }
+
+    rep2 = rep2.join(" ") // joining the array to string 
+    console.log(rep2);
+
+    let charAt = myName.charAt(0);
+    console.log(charAt);
+
+    let insteadOfCharAt = myName[0];
+    console.log(insteadOfCharAt);
+
+    // inversing a string 
+    let reverseString = myName.split("").reverse().join("");
+    console.log(reverseString);
+
+    // add a variable to string litteral 
+    let varX = "Wecome"
+    let varY = "Moahmmed Galal"
+    let varZ1 = `${varX} to Javascript ${varY}` // (the best way)
+    console.log(varZ1)
+    let varZ2 = varX+" to Javascript "+varY // (second way) using concatting
+    console.log(varZ2)
+  </script>
+</html>
