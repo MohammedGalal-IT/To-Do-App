@@ -8,39 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
    
 </head>
 <body>
     <div class="container">
         <header >
             <p>مهامي</p>
-            <i class="fa-solid fa-circle-plus"></i>
+            <i class="fa-solid fa-circle-plus" onclick="createNewTask()" onmouseover="changeColor(this,'#c2c2c2')" onmouseout="changeColor(this,'#FFF')"></i>
             
         </header>
-        <section>
-            <div class="task">
-                <div class="operations">
-                    <div class="check_icon">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                    <div class="xmark_icon">
-                        <i class="fa-solid fa-circle-xmark"></i>
-                    </div>
-                    <div class="trash_icon">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                    <div class="pencil_icon">
-                        <i class="fa-solid fa-pencil"></i>
-                    </div>
-                </div>
-                <p>قراءة كتاب</p>
-                <div class="date">
-                    <p>2024 /12/ 12</p>
-                    <i class="fa-solid fa-calendar-days"></i>
-                </div>
-            </div>
-            
-
+        <section class="Main-Contain">
+           
         </section>
 
     </div>
@@ -62,28 +41,21 @@
         </div>
         <p>قراءة كتاب</p>
         <div class="date">
-            <p>2024 /12/ 12</p>
+            <p>2024 /12/ 2</p>
             <i class="fa-solid fa-calendar-days"></i>
         </div>
     </div>
-    
+
+    <script src="script.js"></script>
 </body> 
 <script>
-//      let h = function() {
-//         Swal.fire({
-//   title: "The Internet?",
-//   text: "That thing is still around?",
-//   icon: "question"
-// });
-//      }
+     let h = function() {
+        Swal.fire({
+  title: "The Internet?",
+  text: "That thing is still around?",
+  icon: "question"
+});
+     }
 
-let tempelate = document.querySelector(".template").cloneNode(true);
-tempelate.className = "task"
-tempelate.style.display="flex"
-
-
-document.querySelector("section").appendChild(tempelate)
-
-    
 </script>
 </html>
